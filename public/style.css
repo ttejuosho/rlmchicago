@@ -1,10 +1,10 @@
-html,body { 
+body { 
   width:100%;
   height:100%;
-  background: #F0F0F0;
+  color: #F0F0F0;
   text-align: center;
-  overflow: scroll;
   margin: 0 auto;
+  position: relative;
 }
 
 .selector-for-some-widget {
