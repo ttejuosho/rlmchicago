@@ -3,7 +3,7 @@ html,body {
   height:100%;
   background: #F0F0F0;
   text-align: center;
-  overflow-x: hidden;
+  overflow: scroll;
   margin: 0 auto;
 }
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" media="screen" href="../public/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:200" rel="stylesheet">
+	<link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" type="image/x-icon" href="../public/images/favicon.ico" />
 	<meta name="google-site-verification" content="uLH10ujjI-TBgtCEM4vFd20GnYYO0lYKzDan4_3GrCI" />
 
@@ -267,7 +268,7 @@
 			<div class="d-md-flex flex-row flex-wrap justify-content-center">
 				<div class="p-2 width2">
 					<div class="form-group">
-						<textarea id="form_message" rows="5" name="message" class="form-control" placeholder="This area is under construction, please email info@rlmchicago.com directly." required="required" data-error="Please,leave us a message."></textarea>
+						<textarea id="form_message" rows="5" name="message" class="form-control" placeholder="Enter Message Here" required="required" data-error="Message field is empty."></textarea>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
@@ -294,13 +295,17 @@
 	<script>
 			function msgConfirm() {
 		// Get the snackbar DIV
-		var x = document.getElementById("snackbar");
+		var popup = document.getElementById("snackbar");
 
 		// Add the "show" class to DIV
-		x.className = "show";
+		popup.className = "show";
+
+		function showPopup (){ 
+			popup.className = popup.className.replace("show", ""); 
+			}
 
 		// After 3 seconds, remove the show class from DIV
-		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+		setTimeout( showPopup(), 5000);
 	}
 	</script>
 
