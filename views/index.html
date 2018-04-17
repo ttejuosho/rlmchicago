@@ -293,21 +293,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	
 	<script>
-			function msgConfirm() {
-		// Get the snackbar DIV
-		var popup = document.getElementById("snackbar");
+		function msgConfirm() {
+	// Get the snackbar DIV
+	var popUp = document.getElementById("snackbar");
 
-		// Add the "show" class to DIV
-		popup.className = "show";
+	// Add the "show" class to DIV
+	popUp.className = "show";
 
-		function showPopup (){ 
-			popup.className = popup.className.replace("show", ""); 
-			}
-
-		// After 3 seconds, remove the show class from DIV
-		setTimeout( showPopup(), 5000);
-	}
-	</script>
-
+	// After 3 seconds, remove the show class from DIV
+	setTimeout(function(){ popUp.className = popUp.className.replace("show", ""); }, 5000);
+}
+</script>
 </body>
 </html>
