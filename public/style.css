@@ -4,7 +4,7 @@ body {
   background: #F0F0F0;
   text-align: center;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
 }
 
 .selector-for-some-widget {
